@@ -10,7 +10,7 @@ enum Opt {
         #[structopt(short)]
         patch: bool,
         #[structopt(parse(from_os_str), long, short)]
-        files: Vec<PathBuf>,
+        file: PathBuf,
     },
     Fetch {
         #[structopt(long)]
